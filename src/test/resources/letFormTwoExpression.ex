@@ -1,0 +1,4 @@
+() -> {
+    println(true);
+    return true;
+}

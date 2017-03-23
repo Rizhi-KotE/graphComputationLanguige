@@ -1,0 +1,532 @@
+14:17:15.350 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:16.059 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:16.062 [INFO] [org.gradle.BuildLogger] Starting Build
+14:17:16.063 [DEBUG] [org.gradle.BuildLogger] Gradle user home: /home/rizhi-kote/.gradle
+14:17:16.063 [DEBUG] [org.gradle.BuildLogger] Current dir: /home/rizhi-kote/Student/labs/graphComputationLanguige
+14:17:16.064 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+14:17:16.065 [DEBUG] [org.gradle.BuildLogger] Build file: null
+14:17:16.079 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Starting to build the build sources.
+14:17:16.080 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+14:17:16.081 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+14:17:16.081 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+14:17:16.206 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/rizhi-kote/.m2/repository
+14:17:16.433 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/buildscript).
+14:17:16.437 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:16.522 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:16.537 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on no_buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/no_buildscript).
+14:17:16.538 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:16.610 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:16.611 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.528 secs
+14:17:16.612 [INFO] [org.gradle.BuildLogger] Settings evaluated using settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle'.
+14:17:16.725 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /home/rizhi-kote/Student/labs/graphComputationLanguige/gradle.properties
+14:17:16.725 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+14:17:16.727 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle'.
+14:17:16.728 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'graphComputationLanguige']
+14:17:16.731 [INFO] [org.gradle.configuration.BuildScriptProcessor] Evaluating root project 'graphComputationLanguige' using build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle'.
+14:17:16.734 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/buildscript).
+14:17:16.735 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:16.745 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:16.748 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on no_buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/no_buildscript).
+14:17:16.749 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:17.672 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:17.672 [DEBUG] [org.gradle.configuration.BuildScriptProcessor] Timing: Running the build script took 0.941 secs
+14:17:17.863 [INFO] [org.gradle.BuildLogger] All projects evaluated.
+14:17:17.922 [DEBUG] [org.gradle.execution.taskgraph.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.054 secs
+14:17:17.923 [INFO] [org.gradle.execution.TaskNameResolvingBuildConfigurationAction] Selected primary task 'build'
+14:17:17.924 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:17.925 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:17.927 [INFO] [org.gradle.BuildLogger] Tasks to be executed: [task ':generateGrammarSource', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':assemble', task ':generateTestGrammarSource', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+14:17:17.928 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :generateGrammarSource
+14:17:17.930 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':generateGrammarSource'
+14:17:17.941 [INFO] [org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter] Skipping task ':generateGrammarSource' as it has no source files.
+14:17:17.941 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':generateGrammarSource'
+14:17:17.942 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :generateGrammarSource UP-TO-DATE
+14:17:17.943 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :compileJava
+14:17:17.943 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':compileJava'
+14:17:17.971 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':compileJava' is up-to-date
+14:17:17.982 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache taskArtifacts.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/taskArtifacts.bin)
+14:17:17.995 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for configuration ':compile'
+14:17:17.996 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory '/home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java'
+14:17:17.996 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main'
+14:17:17.998 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main'
+14:17:17.998 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/dependency-cache'
+14:17:18.002 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache outputFileStates.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/outputFileStates.bin)
+14:17:18.015 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.016 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.017 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver] Resolving configuration ':compile'
+14:17:18.097 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/usr/share/gradle/lib/ivy.jar!/org/apache/ivy/core/settings'
+14:17:18.098 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to '/home/rizhi-kote/Student/labs/graphComputationLanguige/.'
+14:17:18.098 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/usr/share/gradle/lib/ivy.jar!/org/apache/ivy/core/settings'
+14:17:18.131 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'OpenJDK Runtime Environment'
+14:17:18.131 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.platform.library.path' to '/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib'
+14:17:18.132 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64'
+14:17:18.132 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '24.121-b00'
+14:17:18.133 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Oracle Corporation'
+14:17:18.133 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.oracle.com/'
+14:17:18.134 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ':'
+14:17:18.134 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'OpenJDK 64-Bit Server VM'
+14:17:18.134 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+14:17:18.135 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'RU'
+14:17:18.135 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+14:17:18.136 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'unknown'
+14:17:18.136 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+14:17:18.137 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to '/home/rizhi-kote/Student/labs/graphComputationLanguige'
+14:17:18.137 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.7.0_121-b00'
+14:17:18.138 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.X11GraphicsEnvironment'
+14:17:18.138 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed'
+14:17:18.139 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'amd64'
+14:17:18.139 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to '/tmp'
+14:17:18.139 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+14:17:18.140 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.appname' to 'gradle'
+14:17:18.140 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+14:17:18.141 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Linux'
+14:17:18.141 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to '/usr/lib/jni'
+14:17:18.142 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'UTF-8'
+14:17:18.142 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to '/home/rizhi-kote/IDE/idea-IU-163.12024.16/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib'
+14:17:18.143 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'http.keepAlive' to 'true'
+14:17:18.143 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '51.0'
+14:17:18.144 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+14:17:18.144 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot 64-Bit Tiered Compilers'
+14:17:18.145 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '3.16.0-30-generic'
+14:17:18.145 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to '/home/rizhi-kote'
+14:17:18.146 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Europe/Minsk'
+14:17:18.146 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.print.PSPrinterJob'
+14:17:18.147 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.7'
+14:17:18.147 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+14:17:18.148 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'rizhi-kote'
+14:17:18.148 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to '/usr/share/gradle/lib/gradle-launcher-1.4.jar'
+14:17:18.149 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.7'
+14:17:18.149 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '64'
+14:17:18.150 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.launcher.GradleMain build --debug --stacktrace'
+14:17:18.150 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to '/usr/lib/jvm/java-7-openjdk-amd64/jre'
+14:17:18.151 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Oracle Corporation'
+14:17:18.151 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'ru'
+14:17:18.152 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.X11.XToolkit'
+14:17:18.152 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode'
+14:17:18.153 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.7.0_121'
+14:17:18.153 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext'
+14:17:18.154 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes'
+14:17:18.154 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Oracle Corporation'
+14:17:18.155 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '/'
+14:17:18.155 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+14:17:18.156 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+14:17:18.156 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+14:17:18.157 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'gnome'
+14:17:18.157 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to ''
+14:17:18.158 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.dir' to '/home/rizhi-kote/.gradle/caches/artifacts-23/ivy'
+14:17:18.159 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.log.modules.in.use' to 'false'
+14:17:18.204 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration rk#graphComputationLanguige;1.0-SNAPSHOT(compile).
+14:17:18.209 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency rk#graphComputationLanguige;1.0-SNAPSHOT(compile) -> org.antlr#antlr4;4.5([default])
+14:17:18.214 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr4;4.5
+14:17:18.215 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr4;4.5' using repositories [MavenRepo]
+14:17:18.220 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache dynamic-revisions.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/dynamic-revisions.bin)
+14:17:18.223 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr4:4.5' for 'org.antlr#antlr4;4.5'
+14:17:18.226 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/module-metadata.bin)
+14:17:18.272 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:18.283 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr4;4.5' in 'MavenRepo'
+14:17:18.285 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr4:4.5' from repository 'MavenRepo'
+14:17:18.294 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4;4.5(default).
+14:17:18.295 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#antlr4-runtime;4.5([compile(*), master(*), runtime(*)])
+14:17:18.296 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr4-runtime;4.5
+14:17:18.296 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr4-runtime;4.5' using repositories [MavenRepo]
+14:17:18.297 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr4-runtime:4.5' for 'org.antlr#antlr4-runtime;4.5'
+14:17:18.300 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:18.304 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr4-runtime;4.5' in 'MavenRepo'
+14:17:18.304 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr4-runtime:4.5' from repository 'MavenRepo'
+14:17:18.305 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*), runtime(*)])
+14:17:18.306 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr-runtime;3.5.2
+14:17:18.307 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr-runtime;3.5.2' using repositories [MavenRepo]
+14:17:18.307 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr-runtime:3.5.2' for 'org.antlr#antlr-runtime;3.5.2'
+14:17:18.311 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:18.318 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr-runtime;3.5.2' in 'MavenRepo'
+14:17:18.319 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr-runtime:3.5.2' from repository 'MavenRepo'
+14:17:18.320 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#ST4;4.0.8([compile(*), master(*), runtime(*)])
+14:17:18.320 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#ST4;4.0.8
+14:17:18.321 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#ST4;4.0.8' using repositories [MavenRepo]
+14:17:18.322 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:ST4:4.0.8' for 'org.antlr#ST4;4.0.8'
+14:17:18.325 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:18.330 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#ST4;4.0.8' in 'MavenRepo'
+14:17:18.330 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:ST4:4.0.8' from repository 'MavenRepo'
+14:17:18.331 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(compile).
+14:17:18.332 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4-runtime;4.5(compile) -> org.abego.treelayout#org.abego.treelayout.core;1.0.1([compile(*), master(*)])
+14:17:18.333 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.abego.treelayout#org.abego.treelayout.core;1.0.1
+14:17:18.333 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.abego.treelayout#org.abego.treelayout.core;1.0.1' using repositories [MavenRepo]
+14:17:18.334 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.abego.treelayout:org.abego.treelayout.core:1.0.1' for 'org.abego.treelayout#org.abego.treelayout.core;1.0.1'
+14:17:18.337 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:18.341 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.abego.treelayout#org.abego.treelayout.core;1.0.1' in 'MavenRepo'
+14:17:18.342 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.abego.treelayout:org.abego.treelayout.core:1.0.1' from repository 'MavenRepo'
+14:17:18.343 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(master).
+14:17:18.344 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(runtime).
+14:17:18.344 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4-runtime;4.5(runtime) -> org.abego.treelayout#org.abego.treelayout.core;1.0.1([compile(*), master(*), runtime(*)])
+14:17:18.345 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(compile).
+14:17:18.346 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(master).
+14:17:18.347 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(runtime).
+14:17:18.348 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(compile).
+14:17:18.348 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#ST4;4.0.8(compile) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*)])
+14:17:18.349 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(master).
+14:17:18.350 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(runtime).
+14:17:18.351 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#ST4;4.0.8(runtime) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*), runtime(*)])
+14:17:18.352 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(compile).
+14:17:18.352 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(master).
+14:17:18.353 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(runtime).
+14:17:18.354 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(compile).
+14:17:18.355 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(compile) selects same versions as previous traversal. ignoring
+14:17:18.355 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(master).
+14:17:18.356 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(master) selects same versions as previous traversal. ignoring
+14:17:18.357 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(runtime).
+14:17:18.357 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(runtime) selects same versions as previous traversal. ignoring
+14:17:18.361 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching rk#graphComputationLanguige;1.0-SNAPSHOT(antlr) to its parents.
+14:17:18.362 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching rk#graphComputationLanguige;1.0-SNAPSHOT(compile) to its parents.
+14:17:18.363 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(compile) to its parents.
+14:17:18.363 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(runtime) to its parents.
+14:17:18.364 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(master) to its parents.
+14:17:18.365 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(default) to its parents.
+14:17:18.369 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(compile) to its parents.
+14:17:18.369 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(master) to its parents.
+14:17:18.370 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(runtime) to its parents.
+14:17:18.371 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(compile) to its parents.
+14:17:18.372 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(master) to its parents.
+14:17:18.373 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(runtime) to its parents.
+14:17:18.374 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(compile) to its parents.
+14:17:18.374 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(master) to its parents.
+14:17:18.375 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(runtime) to its parents.
+14:17:18.376 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(compile) to its parents.
+14:17:18.376 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(master) to its parents.
+14:17:18.377 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(runtime) to its parents.
+14:17:18.380 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/module-metadata.bin)
+14:17:18.381 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache dynamic-revisions.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/dynamic-revisions.bin)
+14:17:18.382 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.386 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.387 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.390 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.393 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr4;4.5!antlr4.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4/4.5/jar/af4a530e3cd7fa03636645d8077145eefac12907/antlr4-4.5.jar
+14:17:18.394 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.394 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.395 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.396 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.397 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.398 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.abego.treelayout#org.abego.treelayout.core;1.0.1!org.abego.treelayout.core.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.abego.treelayout/org.abego.treelayout.core/1.0.1/jar/e31e79cba7a5414cf18fa69f3f0a2cf9ee997b61/org.abego.treelayout.core-1.0.1.jar
+14:17:18.399 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.399 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.401 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.402 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.403 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr4-runtime;4.5!antlr4-runtime.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4-runtime/4.5/jar/29e48af049f17dd89153b83a7ad5d01b3b4bcdda/antlr4-runtime-4.5.jar
+14:17:18.403 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.404 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.405 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.406 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.407 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.408 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr-runtime/3.5.2/jar/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar
+14:17:18.408 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.409 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.410 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.410 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.411 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.412 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#ST4;4.0.8!ST4.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/ST4/4.0.8/jar/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar
+14:17:18.413 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:18.413 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:18.439 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/fileHashes.bin)
+14:17:18.449 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':compileJava' due to:
+No history is available for task ':compileJava'.
+14:17:18.450 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':compileJava' is not up-to-date
+14:17:18.451 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main'
+14:17:18.452 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/dependency-cache'
+14:17:18.453 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/fileHashes.bin)
+14:17:18.454 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/outputFileStates.bin)
+14:17:18.455 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/taskArtifacts.bin)
+14:17:18.456 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:18.456 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':compileJava'.
+14:17:18.458 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:18.459 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:18.459 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:18.496 [DEBUG] [org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler] Compiler arguments: -source 1.8 -target 1.8 -d /home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main -g -classpath /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4/4.5/jar/af4a530e3cd7fa03636645d8077145eefac12907/antlr4-4.5.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.abego.treelayout/org.abego.treelayout.core/1.0.1/jar/e31e79cba7a5414cf18fa69f3f0a2cf9ee997b61/org.abego.treelayout.core-1.0.1.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4-runtime/4.5/jar/29e48af049f17dd89153b83a7ad5d01b3b4bcdda/antlr4-runtime-4.5.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr-runtime/3.5.2/jar/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/ST4/4.0.8/jar/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Translate.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Calc.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Test.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/ShortToUnicodeString.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVParser.java
+14:17:18.498 [INFO] [org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler] Compiling with JDK 6 Java compiler API.
+14:17:18.499 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:18.500 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:18.501 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:18.502 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':compileJava'
+14:17:18.502 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :compileJava FAILED
+14:17:18.630 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+14:17:18.631 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+14:17:18.631 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+14:17:18.632 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 3.57 secs
+14:17:18.642 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:18.643 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/no_buildscript).
+14:17:18.644 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/buildscript).
+14:17:18.645 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/no_buildscript).
+14:17:18.646 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/buildscript).
+14:17:18.648 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:28.057 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:28.750 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:28.753 [INFO] [org.gradle.BuildLogger] Starting Build
+14:17:28.754 [DEBUG] [org.gradle.BuildLogger] Gradle user home: /home/rizhi-kote/.gradle
+14:17:28.755 [DEBUG] [org.gradle.BuildLogger] Current dir: /home/rizhi-kote/Student/labs/graphComputationLanguige
+14:17:28.756 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+14:17:28.756 [DEBUG] [org.gradle.BuildLogger] Build file: null
+14:17:28.770 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Starting to build the build sources.
+14:17:28.771 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+14:17:28.772 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+14:17:28.772 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+14:17:28.898 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/rizhi-kote/.m2/repository
+14:17:29.132 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/buildscript).
+14:17:29.135 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:29.220 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:29.234 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on no_buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/no_buildscript).
+14:17:29.235 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:29.306 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:29.307 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.534 secs
+14:17:29.308 [INFO] [org.gradle.BuildLogger] Settings evaluated using settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle'.
+14:17:29.420 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /home/rizhi-kote/Student/labs/graphComputationLanguige/gradle.properties
+14:17:29.421 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+14:17:29.422 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle'.
+14:17:29.423 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'graphComputationLanguige']
+14:17:29.426 [INFO] [org.gradle.configuration.BuildScriptProcessor] Evaluating root project 'graphComputationLanguige' using build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle'.
+14:17:29.429 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/buildscript).
+14:17:29.429 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:29.439 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:29.442 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on no_buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/no_buildscript).
+14:17:29.443 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:30.363 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:30.364 [DEBUG] [org.gradle.configuration.BuildScriptProcessor] Timing: Running the build script took 0.937 secs
+14:17:30.621 [INFO] [org.gradle.BuildLogger] All projects evaluated.
+14:17:30.710 [DEBUG] [org.gradle.execution.taskgraph.DefaultTaskGraphExecuter] Timing: Creating the DAG took 0.081 secs
+14:17:30.711 [INFO] [org.gradle.execution.TaskNameResolvingBuildConfigurationAction] Selected primary task 'build'
+14:17:30.713 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:30.714 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:30.717 [INFO] [org.gradle.BuildLogger] Tasks to be executed: [task ':generateGrammarSource', task ':compileJava', task ':processResources', task ':classes', task ':jar', task ':assemble', task ':generateTestGrammarSource', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+14:17:30.718 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :generateGrammarSource
+14:17:30.720 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':generateGrammarSource'
+14:17:30.736 [INFO] [org.gradle.api.internal.tasks.execution.SkipEmptySourceFilesTaskExecuter] Skipping task ':generateGrammarSource' as it has no source files.
+14:17:30.737 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':generateGrammarSource'
+14:17:30.737 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :generateGrammarSource UP-TO-DATE
+14:17:30.738 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :compileJava
+14:17:30.739 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Starting to execute task ':compileJava'
+14:17:30.778 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] Determining if task ':compileJava' is up-to-date
+14:17:30.794 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache taskArtifacts.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/taskArtifacts.bin)
+14:17:30.814 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for configuration ':compile'
+14:17:30.815 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory '/home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java'
+14:17:30.816 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for directory '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main'
+14:17:30.818 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main'
+14:17:30.819 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Can cache files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/dependency-cache'
+14:17:30.825 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache outputFileStates.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/outputFileStates.bin)
+14:17:30.843 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:30.844 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:30.845 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver] Resolving configuration ':compile'
+14:17:30.969 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/usr/share/gradle/lib/ivy.jar!/org/apache/ivy/core/settings'
+14:17:30.970 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to '/home/rizhi-kote/Student/labs/graphComputationLanguige/.'
+14:17:30.970 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/usr/share/gradle/lib/ivy.jar!/org/apache/ivy/core/settings'
+14:17:31.021 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'OpenJDK Runtime Environment'
+14:17:31.021 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.platform.library.path' to '/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/lib64:/usr/lib:/lib'
+14:17:31.022 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64'
+14:17:31.023 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '24.121-b00'
+14:17:31.023 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Oracle Corporation'
+14:17:31.024 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.oracle.com/'
+14:17:31.025 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ':'
+14:17:31.025 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'OpenJDK 64-Bit Server VM'
+14:17:31.026 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+14:17:31.027 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'RU'
+14:17:31.027 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+14:17:31.028 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'unknown'
+14:17:31.029 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+14:17:31.029 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to '/home/rizhi-kote/Student/labs/graphComputationLanguige'
+14:17:31.030 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.7.0_121-b00'
+14:17:31.031 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.X11GraphicsEnvironment'
+14:17:31.031 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/endorsed'
+14:17:31.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'amd64'
+14:17:31.033 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to '/tmp'
+14:17:31.033 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+14:17:31.034 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.appname' to 'gradle'
+14:17:31.035 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+14:17:31.035 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Linux'
+14:17:31.036 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'jna.boot.library.path' to '/usr/lib/jni'
+14:17:31.036 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'UTF-8'
+14:17:31.037 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to '/home/rizhi-kote/IDE/idea-IU-163.12024.16/bin::/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib'
+14:17:31.038 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'http.keepAlive' to 'true'
+14:17:31.039 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '51.0'
+14:17:31.039 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+14:17:31.040 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot 64-Bit Tiered Compilers'
+14:17:31.040 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '3.16.0-30-generic'
+14:17:31.041 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to '/home/rizhi-kote'
+14:17:31.042 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Europe/Minsk'
+14:17:31.042 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.print.PSPrinterJob'
+14:17:31.043 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.7'
+14:17:31.044 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+14:17:31.044 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'rizhi-kote'
+14:17:31.045 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to '/usr/share/gradle/lib/gradle-launcher-1.4.jar'
+14:17:31.046 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.7'
+14:17:31.046 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '64'
+14:17:31.047 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.launcher.GradleMain build --debug --stacktrace'
+14:17:31.048 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to '/usr/lib/jvm/java-7-openjdk-amd64/jre'
+14:17:31.048 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Oracle Corporation'
+14:17:31.049 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'ru'
+14:17:31.050 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.X11.XToolkit'
+14:17:31.050 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode'
+14:17:31.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.7.0_121'
+14:17:31.052 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext'
+14:17:31.052 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to '/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes'
+14:17:31.053 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Oracle Corporation'
+14:17:31.054 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '/'
+14:17:31.054 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+14:17:31.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+14:17:31.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+14:17:31.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.desktop' to 'gnome'
+14:17:31.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to ''
+14:17:31.058 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.cache.dir' to '/home/rizhi-kote/.gradle/caches/artifacts-23/ivy'
+14:17:31.059 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.log.modules.in.use' to 'false'
+14:17:31.129 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration rk#graphComputationLanguige;1.0-SNAPSHOT(compile).
+14:17:31.135 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency rk#graphComputationLanguige;1.0-SNAPSHOT(compile) -> org.antlr#antlr4;4.5([default])
+14:17:31.141 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr4;4.5
+14:17:31.143 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr4;4.5' using repositories [MavenRepo]
+14:17:31.149 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache dynamic-revisions.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/dynamic-revisions.bin)
+14:17:31.154 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr4:4.5' for 'org.antlr#antlr4;4.5'
+14:17:31.157 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/module-metadata.bin)
+14:17:31.209 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:31.218 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr4;4.5' in 'MavenRepo'
+14:17:31.220 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr4:4.5' from repository 'MavenRepo'
+14:17:31.228 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4;4.5(default).
+14:17:31.229 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#antlr4-runtime;4.5([compile(*), master(*), runtime(*)])
+14:17:31.229 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr4-runtime;4.5
+14:17:31.230 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr4-runtime;4.5' using repositories [MavenRepo]
+14:17:31.230 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr4-runtime:4.5' for 'org.antlr#antlr4-runtime;4.5'
+14:17:31.233 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:31.236 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr4-runtime;4.5' in 'MavenRepo'
+14:17:31.236 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr4-runtime:4.5' from repository 'MavenRepo'
+14:17:31.237 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*), runtime(*)])
+14:17:31.238 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#antlr-runtime;3.5.2
+14:17:31.238 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#antlr-runtime;3.5.2' using repositories [MavenRepo]
+14:17:31.239 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:antlr-runtime:3.5.2' for 'org.antlr#antlr-runtime;3.5.2'
+14:17:31.241 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:31.248 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#antlr-runtime;3.5.2' in 'MavenRepo'
+14:17:31.248 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:antlr-runtime:3.5.2' from repository 'MavenRepo'
+14:17:31.249 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4;4.5(default) -> org.antlr#ST4;4.0.8([compile(*), master(*), runtime(*)])
+14:17:31.249 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.antlr#ST4;4.0.8
+14:17:31.250 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.antlr#ST4;4.0.8' using repositories [MavenRepo]
+14:17:31.250 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.antlr:ST4:4.0.8' for 'org.antlr#ST4;4.0.8'
+14:17:31.253 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:31.257 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.antlr#ST4;4.0.8' in 'MavenRepo'
+14:17:31.257 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.antlr:ST4:4.0.8' from repository 'MavenRepo'
+14:17:31.258 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(compile).
+14:17:31.258 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4-runtime;4.5(compile) -> org.abego.treelayout#org.abego.treelayout.core;1.0.1([compile(*), master(*)])
+14:17:31.259 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Selecting new module version org.abego.treelayout#org.abego.treelayout.core;1.0.1
+14:17:31.259 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Attempting to resolve module 'org.abego.treelayout#org.abego.treelayout.core;1.0.1' using repositories [MavenRepo]
+14:17:31.260 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found resolved revision in dynamic revision cache of 'MavenRepo': Using 'org.abego.treelayout:org.abego.treelayout.core:1.0.1' for 'org.abego.treelayout#org.abego.treelayout.core;1.0.1'
+14:17:31.262 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] post 1.3 ivy file: using exact as default matcher
+14:17:31.265 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Using cached module metadata for module 'org.abego.treelayout#org.abego.treelayout.core;1.0.1' in 'MavenRepo'
+14:17:31.266 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.UserResolverChain] Using module 'org.abego.treelayout:org.abego.treelayout.core:1.0.1' from repository 'MavenRepo'
+14:17:31.266 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(master).
+14:17:31.267 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr4-runtime;4.5(runtime).
+14:17:31.267 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#antlr4-runtime;4.5(runtime) -> org.abego.treelayout#org.abego.treelayout.core;1.0.1([compile(*), master(*), runtime(*)])
+14:17:31.268 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(compile).
+14:17:31.268 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(master).
+14:17:31.269 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(runtime).
+14:17:31.269 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(compile).
+14:17:31.270 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#ST4;4.0.8(compile) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*)])
+14:17:31.270 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(master).
+14:17:31.270 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#ST4;4.0.8(runtime).
+14:17:31.271 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting dependency org.antlr#ST4;4.0.8(runtime) -> org.antlr#antlr-runtime;3.5.2([compile(*), master(*), runtime(*)])
+14:17:31.271 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(compile).
+14:17:31.272 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(master).
+14:17:31.272 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.abego.treelayout#org.abego.treelayout.core;1.0.1(runtime).
+14:17:31.273 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(compile).
+14:17:31.273 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(compile) selects same versions as previous traversal. ignoring
+14:17:31.273 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(master).
+14:17:31.274 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(master) selects same versions as previous traversal. ignoring
+14:17:31.274 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Visiting configuration org.antlr#antlr-runtime;3.5.2(runtime).
+14:17:31.275 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Changed edges for org.antlr#antlr-runtime;3.5.2(runtime) selects same versions as previous traversal. ignoring
+14:17:31.279 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching rk#graphComputationLanguige;1.0-SNAPSHOT(antlr) to its parents.
+14:17:31.279 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching rk#graphComputationLanguige;1.0-SNAPSHOT(compile) to its parents.
+14:17:31.279 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(compile) to its parents.
+14:17:31.280 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(runtime) to its parents.
+14:17:31.280 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(master) to its parents.
+14:17:31.281 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4;4.5(default) to its parents.
+14:17:31.284 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(compile) to its parents.
+14:17:31.285 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(master) to its parents.
+14:17:31.285 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr4-runtime;4.5(runtime) to its parents.
+14:17:31.285 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(compile) to its parents.
+14:17:31.286 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(master) to its parents.
+14:17:31.286 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#antlr-runtime;3.5.2(runtime) to its parents.
+14:17:31.287 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(compile) to its parents.
+14:17:31.287 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(master) to its parents.
+14:17:31.288 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.antlr#ST4;4.0.8(runtime) to its parents.
+14:17:31.288 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(compile) to its parents.
+14:17:31.289 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(master) to its parents.
+14:17:31.289 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DependencyGraphBuilder] Attaching org.abego.treelayout#org.abego.treelayout.core;1.0.1(runtime) to its parents.
+14:17:31.291 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache dynamic-revisions.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/dynamic-revisions.bin)
+14:17:31.292 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/module-metadata.bin)
+14:17:31.292 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.295 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.296 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.299 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.301 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr4;4.5!antlr4.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4/4.5/jar/af4a530e3cd7fa03636645d8077145eefac12907/antlr4-4.5.jar
+14:17:31.301 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.302 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.302 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.302 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.303 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.304 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.abego.treelayout#org.abego.treelayout.core;1.0.1!org.abego.treelayout.core.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.abego.treelayout/org.abego.treelayout.core/1.0.1/jar/e31e79cba7a5414cf18fa69f3f0a2cf9ee997b61/org.abego.treelayout.core-1.0.1.jar
+14:17:31.304 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.304 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.305 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.305 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.306 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.306 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr4-runtime;4.5!antlr4-runtime.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4-runtime/4.5/jar/29e48af049f17dd89153b83a7ad5d01b3b4bcdda/antlr4-runtime-4.5.jar
+14:17:31.307 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.307 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.308 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.308 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.309 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.309 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#antlr-runtime;3.5.2!antlr-runtime.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr-runtime/3.5.2/jar/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar
+14:17:31.310 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.310 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.310 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.311 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.311 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.312 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleVersionRepository] Found artifact 'org.antlr#ST4;4.0.8!ST4.jar' in resolver cache: /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/ST4/4.0.8/jar/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar
+14:17:31.312 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/rizhi-kote/.gradle/caches/artifacts-23/artifact-at-repository.bin)
+14:17:31.313 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/rizhi-kote/.gradle/caches/artifacts-23).
+14:17:31.332 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/fileHashes.bin)
+14:17:31.342 [INFO] [org.gradle.api.internal.changedetection.DefaultTaskArtifactStateRepository] Executing task ':compileJava' due to:
+No history is available for task ':compileJava'.
+14:17:31.342 [DEBUG] [org.gradle.api.internal.tasks.execution.SkipUpToDateTaskExecuter] task ':compileJava' is not up-to-date
+14:17:31.344 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main'
+14:17:31.344 [DEBUG] [org.gradle.api.internal.changedetection.DefaultFileCacheListener] Invalidate cached files for file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build/dependency-cache'
+14:17:31.345 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache taskArtifacts.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/taskArtifacts.bin)
+14:17:31.345 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/fileHashes.bin)
+14:17:31.346 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache outputFileStates.bin (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts/outputFileStates.bin)
+14:17:31.346 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:31.347 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter] Executing actions for task ':compileJava'.
+14:17:31.348 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:31.348 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:31.349 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:31.378 [DEBUG] [org.gradle.api.internal.tasks.compile.NormalizingJavaCompiler] Compiler arguments: -source 1.8 -target 1.8 -d /home/rizhi-kote/Student/labs/graphComputationLanguige/build/classes/main -g -classpath /home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4/4.5/jar/af4a530e3cd7fa03636645d8077145eefac12907/antlr4-4.5.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.abego.treelayout/org.abego.treelayout.core/1.0.1/jar/e31e79cba7a5414cf18fa69f3f0a2cf9ee997b61/org.abego.treelayout.core-1.0.1.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr4-runtime/4.5/jar/29e48af049f17dd89153b83a7ad5d01b3b4bcdda/antlr4-runtime-4.5.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/antlr-runtime/3.5.2/jar/cd9cd41361c155f3af0f653009dcecb08d8b4afd/antlr-runtime-3.5.2.jar:/home/rizhi-kote/.gradle/caches/artifacts-23/filestore/org.antlr/ST4/4.0.8/jar/a1c55e974f8a94d78e2348fa6ff63f4fa1fae64/ST4-4.0.8.jar /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Translate.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Calc.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/Test.java /home/rizhi-kote/Student/labs/graphComputationLanguige/src/main/java/tools/ShortToUnicodeString.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/rk/HelloListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ExprLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsBaseListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/ArrayInitListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVListener.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsLexer.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/KeywordsParser.java /home/rizhi-kote/Student/labs/graphComputationLanguige/build/generated-src/antlr/main/tools/CSVParser.java
+14:17:31.378 [INFO] [org.gradle.api.internal.tasks.compile.jdk6.Jdk6JavaCompiler] Compiling with JDK 6 Java compiler API.
+14:17:31.380 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:17:31.380 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:31.381 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+14:17:31.381 [DEBUG] [org.gradle.api.internal.tasks.execution.ExecuteAtMostOnceTaskExecuter] Finished executing task ':compileJava'
+14:17:31.381 [LIFECYCLE] [org.gradle.TaskExecutionLogger] :compileJava FAILED
+14:17:31.450 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+14:17:31.450 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+14:17:31.451 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+14:17:31.451 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 3.679 secs
+14:17:31.458 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on task artifact state cache (/home/rizhi-kote/Student/labs/graphComputationLanguige/.gradle/1.4/taskArtifacts).
+14:17:31.459 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/no_buildscript).
+14:17:31.459 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for build file '/home/rizhi-kote/Student/labs/graphComputationLanguige/build.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/build_5v8n4eqrmt4bpr5dvrs3bs3577/ProjectScript/buildscript).
+14:17:31.459 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on no_buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/no_buildscript).
+14:17:31.460 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on buildscript class cache for settings file '/home/rizhi-kote/Student/labs/graphComputationLanguige/settings.gradle' (/home/rizhi-kote/.gradle/caches/1.4/scripts/settings_7vl0g3fjdminne2tfm2ik8blvc/SettingsScript/buildscript).
+14:17:31.462 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@285876fe, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@47ec3263, org.gradle.logging.internal.JavaUtilLoggingConfigurer@63e02678]
+14:18:04.435 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@1182e445, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@285876fe, org.gradle.logging.internal.JavaUtilLoggingConfigurer@47ec3263]
+14:18:05.130 [DEBUG] [org.gradle.logging.internal.DefaultLoggingConfigurer] Finished configuring with level: DEBUG, configurers: [org.gradle.logging.internal.OutputEventRenderer@1182e445, org.gradle.logging.internal.logback.LogbackLoggingConfigurer@285876fe, org.gradle.logging.internal.JavaUtilLoggingConfigurer@47ec3263]
+14:18:05.133 [INFO] [org.gradle.BuildLogger] Starting Build
+14:18:05.134 [DEBUG] [org.gradle.BuildLogger] Gradle user home: /home/rizhi-kote/.gradle
+14:18:05.134 [DEBUG] [org.gradle.BuildLogger] Current dir: /home/rizhi-kote/Student/labs/graphComputationLanguige
+14:18:05.135 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+14:18:05.136 [DEBUG] [org.gradle.BuildLogger] Build file: null
+14:18:05.150 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Starting to build the build sources.
+14:18:05.151 [DEBUG] [org.gradle.initialization.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+14:18:05.152 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+14:18:05.152 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+14:18:05.275 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/rizhi-kote/.m2/repository

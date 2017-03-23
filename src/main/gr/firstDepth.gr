@@ -1,0 +1,12 @@
+(fn dfs [graph v]
+    (loop [queue (list v) used (graph v)]
+      (if (notempty queue)
+        (let [v (head queue)]
+          (recur [(tail queue)
+            (loop [adjacment (adjacment graph v) used used]
+              (if (notempty adjacment)
+                (let [to (head adjacment)]
+                  (recur [(tail adjacment)]
+                    (+ us to (edge graph v to))))
+                used)])))
+        used)))

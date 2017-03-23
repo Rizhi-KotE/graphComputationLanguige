@@ -1,0 +1,54 @@
+Нахождение компонент связности
+
+нужны списки, создание графа литералом, не понятно с типами
+
+function wfs(graph, v){
+  List queue = List(v)
+  Graph used = Graph(v)
+  while(!queue.empty){
+    Vertex v = queue.head
+    for(to <- (graph adjacment v)){
+      if(!(in graph to)){
+        used += to
+        used += graph get (v, to)
+        queue.push to
+      }
+    }
+  }
+}
+
+(fn wfs [graph v]
+  (def queue (list v))
+  (def used (graph v))
+  (loop [] 
+    (when (notempty queue)
+      (def v (head queue))
+      (loop [adjacment (adjacment graph)]
+        (def to (head adjacment))
+        (+ used to)
+        (+ used (edge graph v to))
+        (recur [adjacment (tail adjacment)])
+      (recur []))))
+  
+
+Поиск цикла
+
+(fn cicle [graph v]
+  (fn cicle [graph v used vertexes]
+    (if (empty vertexes)
+      {}
+      (do 
+        (def to (head vertexes))
+        (if (contain used v)
+          (used)
+          (dfs graph to (+ used to)))))
+  (dfs graph v {[v]} (adjacment graph v)))
+
+графовый литерал
+{
+  [:a :b :c]
+  [:a :b]
+  [:b :c]
+  [:c :a]
+}
+

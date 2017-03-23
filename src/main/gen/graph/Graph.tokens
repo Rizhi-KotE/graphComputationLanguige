@@ -1,0 +1,12 @@
+T__0=1
+T__1=2
+T__2=3
+CHARACHTER=4
+LEXEM=5
+OPERATION=6
+LETTER=7
+OPS=8
+WS=9
+'('=1
+')'=2
+'#'=3
