@@ -1,4 +1,0 @@
-() -> {
-    println(true);
-    return true;
-}

@@ -1,0 +1,18 @@
+(let []
+  (fn +:Graph [g:Graph v:List<Vertex> e:List<Edge>]
+    (if (notempty v) (+ (+ g (head v)) (tail v) e)
+      (if (notempty e) (+ (+ g (head e)) v (tail e))
+        g)))
+  (fn graph: Graph [v: Vertex] (graph [v]))
+  (fn dfs:Graph [g:Graph v:Vertex]
+    (loop [queue: List<Vertex> [v] used: Graph (graph v)]
+      (if (notempty queue)
+        (let [v: Vertex (head queue)]
+          (recur [(tail queue)
+            (loop [adj: List<Vertex> (adjacment g v) used: Graph used]
+              (if (notempty adj)
+                (recur [(tail adj)
+                  (let [to: Vertex (head adj)]
+                    (+ used [to] [(edge g v to)]))])
+                used))]))
+       used))))

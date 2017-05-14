@@ -14,9 +14,9 @@ import java.lang.reflect.Field;
 import static java.lang.String.format;
 
 /**
- * JUnit runner that load from files in classpath content add inject it to fields.
- * Test class should have two fields thar names're "source" and "expected".
- * Runner find files with names that corresponds to testMethod name and look like that pattern
+ * JUnit runner that load from files in classpath and injects its content into fields.
+ * Test class should have two fields which names are "source" and "expected".
+ * Runner find files with names that corresponds into testMethod name and look like that pattern
  * [testMethod].[extension]
  * Where extension is string that takes such values:
  * ex - for expected field
@@ -29,9 +29,15 @@ public class Runner extends BlockJUnit4ClassRunner {
     }
 
     @Override
+    protected Object createTest() throws Exception {
+        System.out.println();
+        return super.createTest();
+    }
+
+    @Override
     protected Statement methodBlock(FrameworkMethod method) {
+        Statement create = super.methodBlock(method);
         try {
-            Statement create = super.methodBlock(method);
             Statement statement = create;
             if (statement instanceof RunBefores) {
                 statement = (Statement) getFieldValue(statement, "fNext");
@@ -41,21 +47,40 @@ public class Runner extends BlockJUnit4ClassRunner {
 
                 Object test = getFieldValue(statement, "fTarget");
 
-                setFieldValue(test, loadSource(fMethod.getName()), "source");
-                setFieldValue(test, loadExpected(fMethod.getName()), "expected");
+                String canonicalName = test.getClass().getCanonicalName();
+
+                String filePlace = format("%s.%s", canonicalName, fMethod.getName());
+                setFieldValue(test, loadSource(filePlace), "source");
+                setFieldValue(test, loadExpected(filePlace), "expected");
             }
-            return create;
+        } catch (IOException e) {
+            e.printStackTrace();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        return create;
+    }
+
+    private Object getFieldValue(Object obj, String fieldName) throws Exception {
+        Field f = obj.getClass().getDeclaredField(fieldName);
+        f.setAccessible(true);
+        return f.get(obj);
+    }
+
+    private void setFieldValue(Object obj, Object value, String fieldName) throws Exception {
+        Field f = obj.getClass().getDeclaredField(fieldName);
+        f.setAccessible(true);
+        f.set(obj, value);
     }
 
     private String loadSource(String name) throws IOException {
-        return readResource(name + ".src");
+        String replace = name.replace(".", "/");
+        return readResource(replace + ".src");
     }
 
-    private String loadExpected(String testName) throws IOException {
-        return readResource(testName + ".ex");
+    private String loadExpected(String name) throws IOException {
+        String replace = name.replace(".", "/");
+        return readResource(replace + ".ex");
     }
 
     private String readResource(String name) throws IOException {
@@ -70,23 +95,5 @@ public class Runner extends BlockJUnit4ClassRunner {
             stringBuilder.append(new String(bytes, 0, readen));
         }
         return stringBuilder.toString();
-    }
-
-    @Override
-    protected Object createTest() throws Exception {
-        System.out.println();
-        return super.createTest();
-    }
-
-    private void setFieldValue(Object obj, Object value, String fieldName) throws Exception {
-        Field f = obj.getClass().getDeclaredField(fieldName);
-        f.setAccessible(true);
-        f.set(obj, value);
-    }
-
-    private Object getFieldValue(Object obj, String fieldName) throws Exception {
-        Field f = obj.getClass().getDeclaredField(fieldName);
-        f.setAccessible(true);
-        return f.get(obj);
     }
 }

@@ -1,0 +1,3 @@
+def st(): Boolean = {
+  true
+}

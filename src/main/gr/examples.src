@@ -1,0 +1,23 @@
+(loop [a (+ a b)] (println a))
+
+(let [_1 (+ a b)]
+  (loop [a _1] (println a)))
+
+(loop [a
+  (loop [a (+ a b)] (println a))]
+  (println a))
+
+(let [_1 (loop [a (+ a b)] (println a))]
+  (loop [a _1] (println a)))
+
+{
+  def _1 = {
+    def loop2(a): Void = {
+      println(a)
+    }
+    loop2(a)
+  }
+  def loop1(a): Void = {
+    println(a)
+  }
+}

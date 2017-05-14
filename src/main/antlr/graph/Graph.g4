@@ -6,32 +6,52 @@ grammar Graph;
 
 file: form EOF;
 
-form: literal
-    | action
-    | vector;
+form: idtf
+    | literal
+    | let
+    | loop
+    | test
+    | fn
+    | recur
+    | action;
 
-action: '(' form* ')';
 
-let: '(''let' '['binding*']' form* ')';
+recur: '(''recur' '['form*']' ')';
 
-loop: '(''loop' '['binding*']' form* ')';
+action: '(' idtf form* ')';
 
-test: '(''if' check then otherwise')';
+let: '(''let' '['binding*']' form+ ')';
 
-then: form;
+loop: '(''loop' '['binding*']' form+ ')';
 
-otherwise: form;
+test: '(''if' form form form')';
 
-check: form;
+fn: '(''fn' param '['param*']' form+ ')';
+
+param: idtf':'type;
+
+type: idtf
+    | idtf'<'type'>';
 
 vector: '[' form* ']';
 
-binding: literal form;
+binding: (param form);
 
-literal: character
-       | vertex
-       | operator
-       | logical;
+idtf: CHARACHTER
+    | operator;
+
+literal: vertex
+       | edge
+       | logical
+       | string
+       | number
+       | vector;
+
+edge: '`('form form form')'
+    | '`('form form')';
+
+number: NUMBERS;
+string: '"'CHARACHTER'"';
 
 character: CHARACHTER;
 
@@ -40,12 +60,12 @@ vertex: '#'character;
 operator: '+'
         | '-'
         | '*'
-        | '/';
+        | '/'
+        | '='
+        | '!=';
 
 logical: 'true'|'false';
 
-CHARACHTER: [a-zA-Z0-9]+;
-LEXEM  :   LETTER+ ;
-OPERATION: [a-z]+;
-LETTER: [a-zA-Z0-9];
+CHARACHTER: [a-zA-Z]+;
+NUMBERS: [0-9]+;
 WS  :   [ \t\r\n]+ -> skip ;

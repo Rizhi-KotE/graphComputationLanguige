@@ -1,0 +1,4 @@
+(let [a: Vertex #a b:Vertex #c n:Number 100]
+  `(a b)
+  `(a n b)
+  `(#asd 10 #b))

@@ -1,4 +1,4 @@
-(fn dfs [graph v]
+(fn dfs:Graph [graph:Graph v:Vertex]
     (loop [queue (list v) used (graph v)]
       (if (notempty queue)
         (let [v (head queue)]

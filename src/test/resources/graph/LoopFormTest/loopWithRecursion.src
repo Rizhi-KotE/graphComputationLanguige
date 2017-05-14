@@ -1,0 +1,4 @@
+(loop [a: String "A" b: String "B"]
+  (if (= a "AA")
+    (recur ["AA" "BB"])
+    (let [] (println a) (println b))))
