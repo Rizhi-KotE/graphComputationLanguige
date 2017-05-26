@@ -22,8 +22,8 @@ public class GraphParser extends Parser {
 	public static final int
 		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, T__8=9, 
 		T__9=10, T__10=11, T__11=12, T__12=13, T__13=14, T__14=15, T__15=16, T__16=17, 
-		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, CHARACHTER=24, 
-		NUMBERS=25, WS=26;
+		T__17=18, T__18=19, T__19=20, T__20=21, T__21=22, T__22=23, T__23=24, 
+		ID=25, NUMBERS=26, WS=27;
 	public static final int
 		RULE_file = 0, RULE_form = 1, RULE_recur = 2, RULE_action = 3, RULE_let = 4, 
 		RULE_loop = 5, RULE_test = 6, RULE_fn = 7, RULE_param = 8, RULE_type = 9, 
@@ -39,12 +39,12 @@ public class GraphParser extends Parser {
 	private static final String[] _LITERAL_NAMES = {
 		null, "'('", "'recur'", "'['", "']'", "')'", "'let'", "'loop'", "'if'", 
 		"'fn'", "':'", "'<'", "'>'", "'`('", "'\"'", "'#'", "'+'", "'-'", "'*'", 
-		"'/'", "'='", "'!='", "'true'", "'false'"
+		"'/'", "'='", "'!='", "'?'", "'true'", "'false'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
 		null, null, null, null, null, null, null, null, null, null, null, null, 
 		null, null, null, null, null, null, null, null, null, null, null, null, 
-		"CHARACHTER", "NUMBERS", "WS"
+		null, "ID", "NUMBERS", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -304,7 +304,7 @@ public class GraphParser extends Parser {
 			setState(61);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0)) {
 				{
 				{
 				setState(58);
@@ -375,7 +375,7 @@ public class GraphParser extends Parser {
 			setState(72);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0)) {
 				{
 				{
 				setState(69);
@@ -449,7 +449,7 @@ public class GraphParser extends Parser {
 			setState(83);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << CHARACHTER))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << ID))) != 0)) {
 				{
 				{
 				setState(80);
@@ -475,7 +475,7 @@ public class GraphParser extends Parser {
 				setState(90); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0) );
 			setState(92);
 			match(T__4);
 			}
@@ -539,7 +539,7 @@ public class GraphParser extends Parser {
 			setState(100);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << CHARACHTER))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << ID))) != 0)) {
 				{
 				{
 				setState(97);
@@ -565,7 +565,7 @@ public class GraphParser extends Parser {
 				setState(107); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0) );
 			setState(109);
 			match(T__4);
 			}
@@ -688,7 +688,7 @@ public class GraphParser extends Parser {
 			setState(125);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << CHARACHTER))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << ID))) != 0)) {
 				{
 				{
 				setState(122);
@@ -714,7 +714,7 @@ public class GraphParser extends Parser {
 				setState(132); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0) );
+			} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0) );
 			setState(134);
 			match(T__4);
 			}
@@ -885,7 +885,7 @@ public class GraphParser extends Parser {
 			setState(152);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << CHARACHTER) | (1L << NUMBERS))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__2) | (1L << T__12) | (1L << T__13) | (1L << T__14) | (1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21) | (1L << T__22) | (1L << T__23) | (1L << ID) | (1L << NUMBERS))) != 0)) {
 				{
 				{
 				setState(149);
@@ -963,7 +963,7 @@ public class GraphParser extends Parser {
 	}
 
 	public static class IdtfContext extends ParserRuleContext {
-		public TerminalNode CHARACHTER() { return getToken(GraphParser.CHARACHTER, 0); }
+		public TerminalNode ID() { return getToken(GraphParser.ID, 0); }
 		public OperatorContext operator() {
 			return getRuleContext(OperatorContext.class,0);
 		}
@@ -993,11 +993,11 @@ public class GraphParser extends Parser {
 			setState(162);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
-			case CHARACHTER:
+			case ID:
 				enterOuterAlt(_localctx, 1);
 				{
 				setState(160);
-				match(CHARACHTER);
+				match(ID);
 				}
 				break;
 			case T__15:
@@ -1006,6 +1006,7 @@ public class GraphParser extends Parser {
 			case T__18:
 			case T__19:
 			case T__20:
+			case T__21:
 				enterOuterAlt(_localctx, 2);
 				{
 				setState(161);
@@ -1086,8 +1087,8 @@ public class GraphParser extends Parser {
 				edge();
 				}
 				break;
-			case T__21:
 			case T__22:
+			case T__23:
 				enterOuterAlt(_localctx, 3);
 				{
 				setState(166);
@@ -1247,7 +1248,7 @@ public class GraphParser extends Parser {
 	}
 
 	public static class StringContext extends ParserRuleContext {
-		public TerminalNode CHARACHTER() { return getToken(GraphParser.CHARACHTER, 0); }
+		public TerminalNode ID() { return getToken(GraphParser.ID, 0); }
 		public StringContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1276,7 +1277,7 @@ public class GraphParser extends Parser {
 			setState(187);
 			match(T__13);
 			setState(188);
-			match(CHARACHTER);
+			match(ID);
 			setState(189);
 			match(T__13);
 			}
@@ -1293,7 +1294,7 @@ public class GraphParser extends Parser {
 	}
 
 	public static class CharacterContext extends ParserRuleContext {
-		public TerminalNode CHARACHTER() { return getToken(GraphParser.CHARACHTER, 0); }
+		public TerminalNode ID() { return getToken(GraphParser.ID, 0); }
 		public CharacterContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -1320,7 +1321,7 @@ public class GraphParser extends Parser {
 			enterOuterAlt(_localctx, 1);
 			{
 			setState(191);
-			match(CHARACHTER);
+			match(ID);
 			}
 		}
 		catch (RecognitionException re) {
@@ -1409,7 +1410,7 @@ public class GraphParser extends Parser {
 			{
 			setState(196);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__15) | (1L << T__16) | (1L << T__17) | (1L << T__18) | (1L << T__19) | (1L << T__20) | (1L << T__21))) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1459,7 +1460,7 @@ public class GraphParser extends Parser {
 			{
 			setState(198);
 			_la = _input.LA(1);
-			if ( !(_la==T__21 || _la==T__22) ) {
+			if ( !(_la==T__22 || _la==T__23) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -1481,7 +1482,7 @@ public class GraphParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\34\u00cb\4\2\t\2"+
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\35\u00cb\4\2\t\2"+
 		"\4\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13"+
 		"\t\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\4\22\t\22"+
 		"\4\23\t\23\4\24\t\24\4\25\t\25\4\26\t\26\3\2\3\2\3\2\3\3\3\3\3\3\3\3\3"+
@@ -1496,7 +1497,7 @@ public class GraphParser extends Parser {
 		"\3\17\3\17\5\17\u00ad\n\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20"+
 		"\3\20\3\20\5\20\u00ba\n\20\3\21\3\21\3\22\3\22\3\22\3\22\3\23\3\23\3\24"+
 		"\3\24\3\24\3\25\3\25\3\26\3\26\3\26\2\2\27\2\4\6\b\n\f\16\20\22\24\26"+
-		"\30\32\34\36 \"$&(*\2\4\3\2\22\27\3\2\30\31\2\u00cd\2,\3\2\2\2\4\67\3"+
+		"\30\32\34\36 \"$&(*\2\4\3\2\22\30\3\2\31\32\2\u00cd\2,\3\2\2\2\4\67\3"+
 		"\2\2\2\69\3\2\2\2\bE\3\2\2\2\nO\3\2\2\2\f`\3\2\2\2\16q\3\2\2\2\20x\3\2"+
 		"\2\2\22\u008a\3\2\2\2\24\u0094\3\2\2\2\26\u0096\3\2\2\2\30\u009f\3\2\2"+
 		"\2\32\u00a4\3\2\2\2\34\u00ac\3\2\2\2\36\u00b9\3\2\2\2 \u00bb\3\2\2\2\""+
@@ -1527,7 +1528,7 @@ public class GraphParser extends Parser {
 		"\3\2\2\2\u0099\u009c\3\2\2\2\u009a\u0098\3\2\2\2\u009a\u009b\3\2\2\2\u009b"+
 		"\u009d\3\2\2\2\u009c\u009a\3\2\2\2\u009d\u009e\7\6\2\2\u009e\27\3\2\2"+
 		"\2\u009f\u00a0\5\22\n\2\u00a0\u00a1\5\4\3\2\u00a1\31\3\2\2\2\u00a2\u00a5"+
-		"\7\32\2\2\u00a3\u00a5\5(\25\2\u00a4\u00a2\3\2\2\2\u00a4\u00a3\3\2\2\2"+
+		"\7\33\2\2\u00a3\u00a5\5(\25\2\u00a4\u00a2\3\2\2\2\u00a4\u00a3\3\2\2\2"+
 		"\u00a5\33\3\2\2\2\u00a6\u00ad\5&\24\2\u00a7\u00ad\5\36\20\2\u00a8\u00ad"+
 		"\5*\26\2\u00a9\u00ad\5\"\22\2\u00aa\u00ad\5 \21\2\u00ab\u00ad\5\26\f\2"+
 		"\u00ac\u00a6\3\2\2\2\u00ac\u00a7\3\2\2\2\u00ac\u00a8\3\2\2\2\u00ac\u00a9"+
@@ -1536,8 +1537,8 @@ public class GraphParser extends Parser {
 		"\4\3\2\u00b2\u00b3\7\7\2\2\u00b3\u00ba\3\2\2\2\u00b4\u00b5\7\17\2\2\u00b5"+
 		"\u00b6\5\4\3\2\u00b6\u00b7\5\4\3\2\u00b7\u00b8\7\7\2\2\u00b8\u00ba\3\2"+
 		"\2\2\u00b9\u00ae\3\2\2\2\u00b9\u00b4\3\2\2\2\u00ba\37\3\2\2\2\u00bb\u00bc"+
-		"\7\33\2\2\u00bc!\3\2\2\2\u00bd\u00be\7\20\2\2\u00be\u00bf\7\32\2\2\u00bf"+
-		"\u00c0\7\20\2\2\u00c0#\3\2\2\2\u00c1\u00c2\7\32\2\2\u00c2%\3\2\2\2\u00c3"+
+		"\7\34\2\2\u00bc!\3\2\2\2\u00bd\u00be\7\20\2\2\u00be\u00bf\7\33\2\2\u00bf"+
+		"\u00c0\7\20\2\2\u00c0#\3\2\2\2\u00c1\u00c2\7\33\2\2\u00c2%\3\2\2\2\u00c3"+
 		"\u00c4\7\21\2\2\u00c4\u00c5\5$\23\2\u00c5\'\3\2\2\2\u00c6\u00c7\t\2\2"+
 		"\2\u00c7)\3\2\2\2\u00c8\u00c9\t\3\2\2\u00c9+\3\2\2\2\20\67?JU\\fm\177"+
 		"\u0086\u0094\u009a\u00a4\u00ac\u00b9";

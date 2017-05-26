@@ -11,11 +11,12 @@ import scala.collection.JavaConverters._
 
 class Visitor(formsTypes: Map[ParserRuleContext, String]) extends GraphBaseVisitor[String] with GraphVisitor[String] {
 
-  lazy val operatorsMap = Map("=" -> "==",
+  lazy val operatorsMap = Map("=" -> "equal",
     "+" -> "plus",
     "-" -> "minus",
     "/" -> "divise",
-    "*" -> "multiply")
+    "*" -> "multiply",
+    "?" -> "contain")
 
   override def visitEdge(ctx: EdgeContext): String = {
     val forms = ctx.form.asScala
@@ -26,8 +27,6 @@ class Visitor(formsTypes: Map[ParserRuleContext, String]) extends GraphBaseVisit
       .add("number", forms.getOrElse("Number", List()).asJava)
       .render()
   }
-
-  def stGroup = new STGroupDir("templates")
 
   override def visitVertex(ctx: GraphParser.VertexContext): String = stGroup
     .getInstanceOf("vertex")
@@ -58,6 +57,8 @@ class Visitor(formsTypes: Map[ParserRuleContext, String]) extends GraphBaseVisit
       .add("otherwise", otherwise)
       .render()
   }
+
+  def stGroup = new STGroupDir("templates")
 
   override def visitLoop(ctx: LoopContext): String = {
     val forms = ctx.form().asScala
@@ -106,7 +107,10 @@ class Visitor(formsTypes: Map[ParserRuleContext, String]) extends GraphBaseVisit
 
   override def visitBinding(ctx: GraphParser.BindingContext): String = {
     val form = visit(ctx.form)
-    format("def %s = %s", visit(ctx.param), form)
+    stGroup.getInstanceOf("binding")
+      .add("name", visit(ctx.param()))
+      .add("form", form)
+      .render()
   }
 
   override def visitLogical(ctx: GraphParser.LogicalContext): String = ctx.getText
@@ -124,7 +128,7 @@ class Visitor(formsTypes: Map[ParserRuleContext, String]) extends GraphBaseVisit
 
   override def visitFn(ctx: FnContext): String = {
     val param = ctx.param().asScala
-    val returnType = formsTypes(ctx)
+    val returnType = formsTypes(ctx).replace("<", "[").replace(">", "]")
     val forms = ctx.form().asScala.map(visit)
 
     stGroup.getInstanceOf("fn")

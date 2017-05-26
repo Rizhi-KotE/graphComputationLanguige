@@ -1,3 +1,3 @@
 vector(forms) ::= <<
-List(<forms; separator=", ">)
+Array(<forms; separator=", ">)
 >>

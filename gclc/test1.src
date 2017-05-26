@@ -1,0 +1,10 @@
+(let []
+  (fn main: Unit [args: Array<String>]
+    (let [v1: Vertex #v1 
+          v2: Vertex #v2 
+          v3: Vertex #v3 
+          g: Graph (graph [v1 v3])]
+      (if (? g v1) (println v1) (println false))
+      (if (? g v2) (println v2) (println false))
+      (if (? g v3) (println v3) (println false)))))
+  

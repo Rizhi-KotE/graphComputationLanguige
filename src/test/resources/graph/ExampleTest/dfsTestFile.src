@@ -1,0 +1,16 @@
+(let []
+  (fn dfs:Graph [g:Graph v:Vertex]
+    (loop [queue: List<Vertex> [v] used: Graph (graph v)]
+      (if (notempty queue)
+        (let [v: Vertex (head queue)]
+          (recur [(tail queue)
+            (loop [adj: List<Vertex> (adjacment g v) used: Graph used]
+              (if (notempty adj)
+                (recur [(tail adj)
+                  (let [to: Vertex (head adj)]
+                    (+ used [to] [(edge g v to)]))])
+                used))]))
+       used)))
+  (fn main: Void [args: List<String>]
+    (let [g:Graph (graph [#A #B #C] [`(#A #B) `(#B #C)])]
+      (println (dfs g #A)))))

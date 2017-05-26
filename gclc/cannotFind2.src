@@ -1,0 +1,2 @@
+(let [] 
+  (fn main: Unit [args: Array<String>] (let [v1: Vertex #v1 v1: Vertex #v1] v1)))

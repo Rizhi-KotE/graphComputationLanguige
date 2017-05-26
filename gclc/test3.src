@@ -1,0 +1,22 @@
+(let []
+  (fn main: Unit [args: Array<String>]
+    (let [v1: Vertex #v1 
+          v2: Vertex #v2 
+          v3: Vertex #v3
+          e1: Edge `(v1 v3)
+          e2: Edge `(#v4 v3)
+	  e3: Edge `(#v4 #v5) 
+          g: Graph (graph [v1 v2 v3] [e1 e2 e3])]
+      (loop [vs: Array<Vertex> (vertexes g)]
+        (if (notempty vs)
+          (let []
+            (println (head vs))
+            (recur [(tail vs)]))
+          (println false)))
+      (loop [es: Array<Edge> (edges g)]
+        (if (notempty es)
+          (let []
+            (println (head es))
+            (recur [(tail es)]))
+          (println false))))))
+          

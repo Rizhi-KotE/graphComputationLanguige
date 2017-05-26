@@ -1,18 +1,19 @@
 (let []
-  (fn +:Graph [g:Graph v:Array<Vertex> e:Array<Edge>]
-    (if (notempty v) (+ (+ g (head v)) (tail v) e)
-      (if (notempty e) (+ (+ g (head e)) v (tail e))
-        g)))
-  (fn graph: Graph [v: Vertex] (graph [v]))
-  (fn dfs:Graph [g:Graph v:Vertex]
+  (fn concat: Array<Vertex> [list: Array<Vertex> listt: Array<Vertex>]
+    (if (notempty listt) (concat (+ list (head listt)) (tail listt))
+      list))
+  (fn mot:Graph [g:Graph v:Vertex]
     (loop [queue: Array<Vertex> [v] used: Graph (graph v)]
       (if (notempty queue)
         (let [v: Vertex (head queue)]
-          (recur [(tail queue)
+          (recur [(concat (tail queue) (- (adjacment g v) used))
             (loop [adj: Array<Vertex> (adjacment g v) used: Graph used]
               (if (notempty adj)
                 (recur [(tail adj)
                   (let [to: Vertex (head adj)]
                     (+ used [to] [(edge g v to)]))])
                 used))]))
-       used))))
+       used)))
+  (fn main: Unit [args: Array<String>]
+    (let [g:Graph (graph [#A #B #C] [`(#A #B) `(#B #C)])]
+      (println (mot g #B)))))

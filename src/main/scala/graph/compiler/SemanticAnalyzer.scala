@@ -32,14 +32,18 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
   }
 
   override def visitBinding(ctx: GraphParser.BindingContext): Unit = {
+    contextMap.findEntityInOneLevel(ctx.param().idtf().getText,new AnyStructure) match {
+      case null => null
+      case e => throw new AlreadyDefinedException(s"Variable with name ${ctx.param().idtf().getText} " +
+        s"already bound to this context level\n${ctx.getText}")
+    }
     visit(ctx.param())
     visit(ctx.form())
-
     if (formsType(ctx.form()) match {
       case f: TypedFunction => !f.returnType.matchType(formsType(ctx.param()))
       case e: TypedEntity => !e.matchType(formsType(ctx.param()))
     }) {
-      throw new TypeMismatchException(ctx.getText)
+      throw new TypeMismatchException(s"TypeMismatch: ${ctx.toString}\n${ctx.getText}")
     }
     else {
       formsType(ctx) = formsType(ctx.param())
@@ -51,8 +55,8 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
       formsType(ctx) = contextMap.findEntity(ctx.getText, new AnyType)
     } catch {
       case e: CannotChooseVariableValueException => {
-        println(ctx.getText)
-        e.printStackTrace()
+        System.err.println(e.getMessage, ctx)
+        throw e
       }
     }
   }
@@ -83,17 +87,17 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
         case e => e
       }
     if (!forms.head.matchType(new TypedStructure("Boolean"))) {
-      throw new TypeMismatchException(s"first form of test form must has type Boolean, but has\n${forms.head.entityType}")
+      throw new TypeMismatchException(s"first form of test form must has type Boolean, but has\n${forms.head.entityType}\n${ctx.toString()}")
     }
     if (!forms(1).matchType(forms(2))) {
-      throw new TypeMismatchException(s"second and third form of test form must be the same type, but was\n${forms.tail}")
+      throw new TypeMismatchException(s"second and third form of test form must be the same type, but was\n${forms.tail}\n${ctx.toString()}")
     }
     formsType(ctx) = forms.tail.filter {
       case e: AnyType => false
       case _ => true
     } match {
       case e if e.nonEmpty => e.head
-      case _ => throw new TypeMismatchException(s"cannot infer type of test form\n${forms.tail}")
+      case _ => throw new TypeMismatchException(s"cannot infer type of test form\n${forms.tail}\n${ctx.toString()}")
     }
   }
 
@@ -107,20 +111,23 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
   }
 
   override def visitAction(ctx: GraphParser.ActionContext): Unit = {
+    ctx.form.asScala.foreach(visit)
+    val functType = TypedFunction(new AnyType(), ctx.form
+      .asScala
+      .map(formsType)
+      .map({
+        case f: TypedFunction => f.returnType
+        case e: TypedEntity => e
+      }))
     try {
-      ctx.form.asScala.foreach(visit)
       formsType(ctx) = contextMap
-        .findEntity(ctx.idtf().getText, TypedFunction(new AnyType(), ctx.form
-          .asScala
-          .map(formsType)
-          .map({
-            case f: TypedFunction => f.returnType
-            case e: TypedEntity => e
-          })))
+        .findEntity(ctx.idtf().getText, functType)
     } catch {
-      case e: CannotFindEnetityException => {
-        println(ctx.getText)
-        e.printStackTrace()
+      case e: CannotFindEntityException => {
+        throw new CannotFindEntityException(s"Cannot find function with name ${ctx.idtf().getText}\nand type ${functType.toString}\n${ctx.toString()}")
+      }
+      case e: CannotChooseVariableValueException => {
+        throw new CannotChooseVariableValueException(s"${e.getMessage}\nin\n${ctx.getText}")
       }
     }
   }
@@ -148,9 +155,9 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
       childrenTypes.foldLeft(childrenTypes.head)((`type`, elementType) =>
         if (elementType.matchType(`type`)) `type`
         else
-          throw new TypeMismatchException(s"List should has elements of one type, but has $childrenTypes"))
+          throw new TypeMismatchException(s"List should has elements of one type, but has $childrenTypes\n${ctx.toString()}"))
     }
-    formsType(ctx) = new TypedStructure(s"List<${
+    formsType(ctx) = new TypedStructure(s"Array<${
       listType match {
         case f: TypedFunction => f.returnType.toString
         case e => e.toString
@@ -174,10 +181,10 @@ class SemanticAnalyzer extends GraphBaseVisitor[Unit] {
     formsType(ctx) = types match {
       case t if t.size == 2 => if (VERTEX.matchType(t(0)) && VERTEX.matchType(t(1)))
         EDGE
-      else throw new TypeMismatchException("edge literal should has only forms with type of Vertex")
+      else throw new TypeMismatchException(s"edge literal should has only forms with type of Vertex\n${ctx.getText}")
       case t if t.size == 3 => if (VERTEX.matchType(t(0)) && VERTEX.matchType(t(2)) && NUMBER.matchType(t(1)))
         EDGE
-      else throw new TypeMismatchException("edge literal should has forms types [Vertex Number Vertex]")
+      else throw new TypeMismatchException(s"edge literal should has forms types [Vertex Number Vertex]\n${ctx.getText}")
     }
   }
 }

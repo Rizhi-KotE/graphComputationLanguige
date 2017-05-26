@@ -1,0 +1,2 @@
+(let [edge: Edge #A
+    vertex: Vertex `(#A #B)] edge)

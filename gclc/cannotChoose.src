@@ -1,0 +1,4 @@
+(let [] 
+  (fn entity: Vertex [] #a)
+  (fn entity: Edge [] `(#a #b))
+  (fn main: Unit [args: Array<String>] (println (entity))))

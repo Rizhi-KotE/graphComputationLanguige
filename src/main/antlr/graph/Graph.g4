@@ -37,7 +37,7 @@ vector: '[' form* ']';
 
 binding: (param form);
 
-idtf: CHARACHTER
+idtf: ID
     | operator;
 
 literal: vertex
@@ -51,9 +51,9 @@ edge: '`('form form form')'
     | '`('form form')';
 
 number: NUMBERS;
-string: '"'CHARACHTER'"';
+string: '"'ID'"';
 
-character: CHARACHTER;
+character: ID;
 
 vertex: '#'character;
 
@@ -62,10 +62,11 @@ operator: '+'
         | '*'
         | '/'
         | '='
-        | '!=';
+        | '!='
+        | '?';
 
 logical: 'true'|'false';
 
-CHARACHTER: [a-zA-Z]+;
+ID: [a-zA-Z][0-9a-zA-Z]*;
 NUMBERS: [0-9]+;
 WS  :   [ \t\r\n]+ -> skip ;

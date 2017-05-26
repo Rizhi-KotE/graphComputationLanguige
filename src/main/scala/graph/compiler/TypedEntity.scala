@@ -62,3 +62,12 @@ class AnyType extends TypedEntity {
 
   override def entityType: String = ???
 }
+
+class AnyStructure extends TypedEntity {
+  override def matchType(entity: TypedEntity): Boolean = entity match {
+    case e: TypedStructure => true
+    case _ => false
+  }
+
+  override def entityType: String = ???
+}

@@ -1,0 +1,9 @@
+(let []
+  (fn main: Unit [args: Array<String>]
+    (let [v1: Vertex #v1 
+          v2: Vertex v1 
+          v3: Vertex #v1]
+      (if (= v1 v2) (println true) (println false))
+      (if (= v1 v3) (println true) (println false))
+      (if (= v2 v3) (println true) (println false)))))
+  
