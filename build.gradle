@@ -30,3 +30,41 @@ jar {
     archiveName = 'gclc.jar'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
+
+task compileGraphL (type: JavaExec) {
+    workingDir = file('gclc')
+    def buildDir = "${workingDir}/generated"
+
+    classpath = sourceSets.main.runtimeClasspath
+
+    main = 'Compiler'
+
+    if(myargs)
+    args(myargs)
+
+    def genDir ="${buildDir}/graph"
+    def file = file(genDir)
+    file.mkdirs()
+    standardOutput = new FileOutputStream("${genDir}/${myargs}.scala")
+}
+
+task compileScalaGraphL (type: ScalaCompile){
+    dependsOn += [compileScala, compileGraphL]
+
+    source = fileTree(dir: 'gclc/generated/graph')
+
+    classpath = sourceSets.main.runtimeClasspath
+
+    destinationDir = file("gclc/generated/scala")
+
+    scalaCompileOptions.incrementalOptions.analysisFile = file('gclc/generated/scala/analiz')
+}
+
+task runGraphL (type: JavaExec){
+    dependsOn += [compileScalaGraphL]
+
+    def scalaCompileDir = "gclc/generated/scala"
+    main = myargs
+
+    classpath =sourceSets.main.runtimeClasspath + files(scalaCompileDir)
+}
